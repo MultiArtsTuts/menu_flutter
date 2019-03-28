@@ -131,7 +131,7 @@ class _MenuPagerState extends State<MenuPager> with TickerProviderStateMixin {
 
   Iterable<Widget> _buildPages() {
     final List<Widget> pages = <Widget>[];
-    for (int index = 0; index < 10; index++) {
+    for (int index = 0; index < Menu.menu.length; index++) {
       var alignment = Alignment.center.add(new Alignment(
           (selectedIndex.value - index) * _kViewportFraction, 0.0));
       var resizeFactor = (1 -
